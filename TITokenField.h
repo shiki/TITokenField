@@ -95,7 +95,8 @@ typedef enum {
 @property (nonatomic, assign) BOOL editable;
 @property (nonatomic, assign) BOOL resultsModeEnabled;
 @property (nonatomic, assign) BOOL removesTokensOnEndEditing;
-@property (nonatomic, readonly) int numberOfLines;
+@property (nonatomic) int numberOfLines;
+@property (nonatomic) CGPoint tokenCaret;
 @property (nonatomic) int tokenLimit;
 @property (nonatomic, strong) NSCharacterSet * tokenizingCharacters;
 
@@ -117,6 +118,9 @@ typedef enum {
 
 // Pass nil to hide label
 - (void)setPromptText:(NSString *)aText;
+
+- (CGFloat)leftViewWidth;
+- (CGFloat)rightViewWidth;
 
 @end
 

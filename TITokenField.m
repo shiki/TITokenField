@@ -472,7 +472,6 @@ NSString * const kTextHidden = @"\u200D"; // Zero-Width Joiner
 	id __weak delegate;
 	TITokenFieldInternalDelegate * _internalDelegate;
 	NSMutableArray * _tokens;
-	CGPoint _tokenCaret;
     UILabel * _placeHolderLabel;
 }
 @synthesize delegate = delegate;
